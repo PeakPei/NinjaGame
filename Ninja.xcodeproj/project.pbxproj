@@ -17,6 +17,10 @@
 		BA05E3501DC3075D009DD830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA05E34E1DC3075D009DD830 /* LaunchScreen.storyboard */; };
 		BA05E35B1DC3075D009DD830 /* NinjaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05E35A1DC3075D009DD830 /* NinjaTests.m */; };
 		BA05E3661DC3075D009DD830 /* NinjaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05E3651DC3075D009DD830 /* NinjaUITests.m */; };
+		BA05E3771DC30DA2009DD830 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = BA05E3731DC30DA2009DD830 /* background-music-aac.caf */; };
+		BA05E3781DC30DA2009DD830 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = BA05E3741DC30DA2009DD830 /* pew-pew-lei.caf */; };
+		BA05E3791DC30DA2009DD830 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = BA05E3761DC30DA2009DD830 /* sprites.atlas */; };
+		BA05E37C1DC359C0009DD830 /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BA05E37B1DC359C0009DD830 /* GameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,11 @@
 		BA05E3611DC3075D009DD830 /* NinjaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinjaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA05E3651DC3075D009DD830 /* NinjaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NinjaUITests.m; sourceTree = "<group>"; };
 		BA05E3671DC3075D009DD830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA05E3731DC30DA2009DD830 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		BA05E3741DC30DA2009DD830 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		BA05E3761DC30DA2009DD830 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = sprites.atlas; path = ../../../Downloads/SpriteKitSimpleGame/SpriteKitSimpleGame/sprites.atlas; sourceTree = "<group>"; };
+		BA05E37A1DC359C0009DD830 /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		BA05E37B1DC359C0009DD830 /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +115,14 @@
 		BA05E33A1DC3075D009DD830 /* Ninja */ = {
 			isa = PBXGroup;
 			children = (
+				BA05E3751DC30DA2009DD830 /* Sounds */,
+				BA05E3761DC30DA2009DD830 /* sprites.atlas */,
 				BA05E33E1DC3075D009DD830 /* AppDelegate.h */,
 				BA05E33F1DC3075D009DD830 /* AppDelegate.m */,
 				BA05E3411DC3075D009DD830 /* GameScene.h */,
 				BA05E3421DC3075D009DD830 /* GameScene.m */,
+				BA05E37A1DC359C0009DD830 /* GameOverScene.h */,
+				BA05E37B1DC359C0009DD830 /* GameOverScene.m */,
 				BA05E3441DC3075D009DD830 /* GameScene.sks */,
 				BA05E3461DC3075D009DD830 /* GameViewController.h */,
 				BA05E3471DC3075D009DD830 /* GameViewController.m */,
@@ -146,6 +159,16 @@
 				BA05E3671DC3075D009DD830 /* Info.plist */,
 			);
 			path = NinjaUITests;
+			sourceTree = "<group>";
+		};
+		BA05E3751DC30DA2009DD830 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BA05E3731DC30DA2009DD830 /* background-music-aac.caf */,
+				BA05E3741DC30DA2009DD830 /* pew-pew-lei.caf */,
+			);
+			name = Sounds;
+			path = ../../../Downloads/SpriteKitSimpleGame/SpriteKitSimpleGame/Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,10 +274,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA05E3791DC30DA2009DD830 /* sprites.atlas in Resources */,
+				BA05E3771DC30DA2009DD830 /* background-music-aac.caf in Resources */,
 				BA05E3451DC3075D009DD830 /* GameScene.sks in Resources */,
 				BA05E3501DC3075D009DD830 /* LaunchScreen.storyboard in Resources */,
 				BA05E34D1DC3075D009DD830 /* Assets.xcassets in Resources */,
 				BA05E34B1DC3075D009DD830 /* Main.storyboard in Resources */,
+				BA05E3781DC30DA2009DD830 /* pew-pew-lei.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA05E37C1DC359C0009DD830 /* GameOverScene.m in Sources */,
 				BA05E3481DC3075D009DD830 /* GameViewController.m in Sources */,
 				BA05E3401DC3075D009DD830 /* AppDelegate.m in Sources */,
 				BA05E3431DC3075D009DD830 /* GameScene.m in Sources */,
